@@ -160,6 +160,42 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  height: 95px;
+  background-color: #F6F6F6;
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  /* Full width */
+  opacity: 95%;
+  padding-top: 1rem;
+}
+nav .head {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+nav .head h1 {
+  color: #23293B;
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+}
+nav .head .menu {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+nav .head .menu a {
+  text-decoration: none;
+  color: #5E6164;
+  font-size: 1.5rem;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,6 +205,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro .headimg {
+  margin-top: 95px;
 }
 .home .intro h2 {
   padding: 15px;
