@@ -80,6 +80,9 @@
         .border(4px);
         margin-top: 1rem;
         width: 50%;
+        @media @phone {
+          width: 100%;
+        }
       }
 
       .btn {
@@ -89,6 +92,9 @@
         &:hover {
           background-color: @shuttle-gray;
           color: @ebony-clay;
+        }
+        @media @phone {
+          width: 100%;
         }
       }
     }

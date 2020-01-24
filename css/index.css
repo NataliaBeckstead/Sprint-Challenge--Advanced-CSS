@@ -296,6 +296,11 @@ footer {
   margin-top: 1rem;
   width: 50%;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text input {
+    width: 100%;
+  }
+}
 .home .walk .walk-text .btn {
   display: block;
   background-color: #23293B;
@@ -316,6 +321,11 @@ footer {
 .home .walk .walk-text .btn:hover {
   background-color: #5E6164;
   color: #23293B;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
