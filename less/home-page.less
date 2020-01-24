@@ -7,6 +7,7 @@
     .headimg {
       margin-top: 95px;
       .border(4px);
+      .animation(head, 3s, 1); //using animation parametric mixin
     }
     h2 {
       padding: 15px;
@@ -25,6 +26,7 @@
     @media @phone {
       .hideImg{  display: none; }
     }
+    .animation(images, 5s, 1); //using animation parametric mixin
 
     img {
       width: 28%;
@@ -72,6 +74,8 @@
 
       .btn {
         .button(@ebony-clay, 115px, white);
+        //using animation parametric mixin
+        .animation(button, 1s, infinite);
         &:hover {
           background-color: @shuttle-gray;
           color: @ebony-clay;
@@ -87,6 +91,7 @@
         width: 100%;
         height: auto;
         .border(10px);
+        .animation(images, 8s, 1); //using animation parametric mixin
       }
       @media @phone {
         width: 100%;
@@ -96,4 +101,37 @@
       flex-direction: column-reverse;
     }
   }
+
+ //animation
+@keyframes head {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+@keyframes images {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@keyframes button {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+} 
 }// home

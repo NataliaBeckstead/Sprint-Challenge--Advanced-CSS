@@ -18,3 +18,10 @@
 .center () {
     justify-content: center;
 }
+.animation (@name, @time, @count) {
+    animation-name: @name;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: @count;
+    animation-duration: @time;
+    animation-direction: alternate;
+}

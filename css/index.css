@@ -221,6 +221,11 @@ footer {
 .home .intro .headimg {
   margin-top: 95px;
   border-radius: 4px;
+  animation-name: head;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+  animation-direction: alternate;
 }
 .home .intro h2 {
   padding: 15px;
@@ -232,6 +237,11 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  animation-name: images;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+  animation-direction: alternate;
 }
 @media (max-width: 500px) {
   .home .space-images .hideImg {
@@ -290,6 +300,11 @@ footer {
   text-align: center;
   padding-top: 1.3rem;
   color: white;
+  animation-name: button;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-direction: alternate;
 }
 .home .walk .walk-text .btn:hover {
   background-color: #5E6164;
@@ -303,6 +318,11 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+  animation-name: images;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-duration: 8s;
+  animation-direction: alternate;
 }
 @media (max-width: 500px) {
   .home .walk .walk-img {
@@ -312,5 +332,35 @@ footer {
 @media (max-width: 500px) {
   .home .walk {
     flex-direction: column-reverse;
+  }
+}
+@keyframes head {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes images {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes button {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
   }
 }
