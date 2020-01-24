@@ -6,8 +6,15 @@
     width: @width;
     height: 45px;
     font-size: 2rem;
-    border-radius: 10px;
+    .border(10px);
     text-align: center;
     padding-top: 1.3rem;
     color: @font-color;
+}
+
+.border (@b-radius:20px) {
+    border-radius: @b-radius;
+}
+.center () {
+    justify-content: center;
 }

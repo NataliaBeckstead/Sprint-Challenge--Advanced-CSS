@@ -264,6 +264,10 @@ footer {
   padding-top: 1.3rem;
   color: white;
 }
+.home .walk .walk-text .btn:hover {
+  background-color: #5E6164;
+  color: #23293B;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
