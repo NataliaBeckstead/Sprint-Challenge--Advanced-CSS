@@ -1,1 +1,27 @@
 // Mixins Here
+.button (@bg-color, @width, @font-color) {
+    display: block;
+    background-color: @bg-color;
+    cursor: pointer;
+    width: @width;
+    height: 45px;
+    font-size: 2rem;
+    .border(10px);
+    text-align: center;
+    padding-top: 1.3rem;
+    color: @font-color;
+}
+
+.border (@b-radius:20px) {
+    border-radius: @b-radius;
+}
+.center () {
+    justify-content: center;
+}
+.animation (@name, @time, @count) {
+    animation-name: @name;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: @count;
+    animation-duration: @time;
+    animation-direction: alternate;
+}
